@@ -1,0 +1,117 @@
+extends ../_template
+
+block variables
+  - var title = 'Works'
+  - var pageHeaderTitle = 'Наши работы'
+
+block content
+  include ../sections/header
+
+  //begin content
+  section.main
+    aside.aside
+      .aside-open
+
+      .aside__inn
+        include ../elements/aside-logo
+
+        h3.aside__title Виды работ
+
+        nav.aside-menu
+          ul.aside-menu__list
+            li.aside-menu__item
+              a(href="#").aside-menu__link Все работы
+            li.aside-menu__item.active
+              a(href="#").aside-menu__link Ремонт под ключ
+            li.aside-menu__item
+              a(href="#").aside-menu__link Остекление балконов
+            li.aside-menu__item
+              a(href="#").aside-menu__link Отделка балконов
+
+
+    .container-right
+      .container-right__inn
+        include ../elements/breadcrumbs
+
+        h1.page-header-title #{pageHeaderTitle}
+
+        // begin works
+        .works
+          section.works-header
+            p.works-header__text Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям.
+          section.works-list
+            .works-item
+              img(src='assets/img/works.jpg', alt="works preview")
+              .works-item__inn
+                .works-item__descripton
+                  h3.works-item__title Замена стеклопакетов
+                  p.works-item__adress пр. Луначарского, д.96
+                a(href="#").works-item__link Подробнее
+
+            .works-item
+              img(src='assets/img/works.jpg', alt="works preview")
+              .works-item__inn
+                .works-item__descripton
+                  h3.works-item__title Замена стеклопакетов
+                  p.works-item__adress пр. Луначарского, д.96
+                a(href="#").works-item__link Подробнее
+
+            .works-item
+              img(src='assets/img/works.jpg', alt="works preview")
+              .works-item__inn
+                .works-item__descripton
+                  h3.works-item__title Замена стеклопакетов
+                  p.works-item__adress пр. Луначарского, д.96
+                a(href="#").works-item__link Подробнее
+
+            .works-item
+              img(src='assets/img/works.jpg', alt="works preview")
+              .works-item__inn
+                .works-item__descripton
+                  h3.works-item__title Замена стеклопакетов
+                  p.works-item__adress пр. Луначарского, д.96
+                a(href="#").works-item__link Подробнее
+
+            .works-item
+              img(src='assets/img/works.jpg', alt="works preview")
+              .works-item__inn
+                .works-item__descripton
+                  h3.works-item__title Замена стеклопакетов
+                  p.works-item__adress пр. Луначарского, д.96
+                a(href="#").works-item__link Подробнее
+
+            .works-item
+              img(src='assets/img/works.jpg', alt="works preview")
+              .works-item__inn
+                .works-item__descripton
+                  h3.works-item__title Замена стеклопакетов
+                  p.works-item__adress пр. Луначарского, д.96
+                a(href="#").works-item__link Подробнее
+
+            .works-item
+              img(src='assets/img/works.jpg', alt="works preview")
+              .works-item__inn
+                .works-item__descripton
+                  h3.works-item__title Замена стеклопакетов
+                  p.works-item__adress пр. Луначарского, д.96
+                a(href="#").works-item__link Подробнее
+
+            .works-item
+              img(src='assets/img/works.jpg', alt="works preview")
+              .works-item__inn
+                .works-item__descripton
+                  h3.works-item__title Замена стеклопакетов
+                  p.works-item__adress пр. Луначарского, д.96
+                a(href="#").works-item__link Подробнее
+
+            .works-item
+              img(src='assets/img/works.jpg', alt="works preview")
+              .works-item__inn
+                .works-item__descripton
+                  h3.works-item__title Замена стеклопакетов
+                  p.works-item__adress пр. Луначарского, д.96
+                a(href="#").works-item__link Подробнее
+        // end works
+  //end   content
+
+  include ../sections/footer

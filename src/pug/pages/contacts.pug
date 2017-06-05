@@ -1,0 +1,96 @@
+extends ../_template
+
+block variables
+  - var title = 'Contacts'
+  - var pageHeaderTitle = 'Контакты'
+
+block content
+  include ../sections/header
+
+  //begin content
+  section.main
+    aside.aside
+      .aside-open
+
+      .aside__inn
+        include ../elements/aside-logo
+
+        h3.aside__title О компании
+
+        nav.aside-menu
+          ul.aside-menu__list
+            li.aside-menu__item
+              a(href="#").aside-menu__link Лицензии и сертификаты
+            li.aside-menu__item.active
+              a(href="#").aside-menu__link История
+            li.aside-menu__item
+              a(href="#").aside-menu__link Партнерам
+            li.aside-menu__item
+              a(href="#").aside-menu__link Типовые документы
+            li.aside-menu__item
+              a(href="#").aside-menu__link Любой другой раздел
+
+
+    .container-right
+      .container-right__inn
+        include ../elements/breadcrumbs
+
+        h1.page-header-title #{pageHeaderTitle}
+
+      // begin contacts
+      .contacts
+        .contacts__item
+          h3.contacts__title Адрес:
+          .contacts__link-list
+            a(href="#", target="_blank", rel="nofollow noopener noreferrer").contacts__link
+              |Россия, Санкт-Петербург,
+              br
+              |Удельный проспект, д.5
+              br
+              |Бизнес-центр "Удельный-V", офис 513
+
+        .contacts__item
+          h3.contacts__title Телефон:
+          .contacts__link-list
+            a(href="tel://+7(812)309-29-98").contacts__link +7(812)309-29-98
+            br
+            a(href="tel://+7(812)309-29-98").contacts__link +7(812)309-29-98
+            br
+            a(href="tel://+7(812)309-29-98").contacts__link +7(812)309-29-98
+
+        .contacts__item
+          h3.contacts__title Адрес:
+          .contacts__link-list
+            a(href="mailto:info@genesis.ru").contacts__link info@genesis.ru
+      // end contacts
+
+
+      //begin map
+      .contacts-map
+        iframe(src='https://api-maps.yandex.ua/frame/v1/-/CZdymJ27', frameborder='0')
+      //end   map
+
+
+      //begin callback
+      .callback
+        h3.callback__title Оставьте заявку прямо сейчас!
+
+        //begin callback-form
+        .callback-form
+          form
+            label
+              |  Имя*
+              input(type="text" required)
+            label
+              |  Телефон*
+              input(type="text" required)
+            label
+              |  E-mail
+              input
+            .callback-form__send.successOpen
+              input(type='submit', placeholder='отправить')
+        //end   callback-form
+      //end   callback
+  //end   content
+
+  include ../sections/footer

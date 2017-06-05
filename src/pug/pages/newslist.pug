@@ -1,0 +1,81 @@
+extends ../_template
+
+block variables
+  - var title = 'Newslist'
+  - var pageHeaderTitle = 'Полезная информация'
+
+block content
+  include ../sections/header
+
+  //begin content
+  section.main
+    aside.aside
+      .aside-open
+
+      .aside__inn
+        include ../elements/aside-logo
+
+        h3.aside__title Архив статей
+
+        nav.aside-menu
+          ul.aside-menu__list
+            li.aside-menu__item
+              a(href="#").aside-menu__link Все статьи
+            li.aside-menu__item.active
+              a(href="#").aside-menu__link Январь 2017
+            li.aside-menu__item
+              a(href="#").aside-menu__link Февраль 2017
+            li.aside-menu__item
+              a(href="#").aside-menu__link Март 2017
+
+
+    .container-right
+      .container-right__inn
+        include ../elements/breadcrumbs
+
+        h1.page-header-title #{pageHeaderTitle}
+
+        // begin newslist
+        .newslist
+          .newslist__item
+            .newslist__pic
+              img(src='assets/img/newslist.jpg', alt="newslist preview")
+              .newslist__date 21.12.2016
+            .newslist__description
+              h3.newslist__title Новость 1
+              p.newslist__text Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития.
+            a(href="#").newslist__link
+
+          .newslist__item
+            .newslist__pic
+              img(src='assets/img/newslist.jpg', alt="newslist preview")
+              .newslist__date 21.12.2016
+            .newslist__description
+              h3.newslist__title Новость 1
+              p.newslist__text Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития.
+            a(href="#").newslist__link
+
+          .newslist__item
+            .newslist__pic
+              img(src='assets/img/newslist.jpg', alt="newslist preview")
+              .newslist__date 21.12.2016
+            .newslist__description
+              h3.newslist__title Новость 1
+              p.newslist__text Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития.
+            a(href="#").newslist__link
+
+          .newslist__item
+            .newslist__pic
+              img(src='assets/img/newslist.jpg', alt="newslist preview")
+              .newslist__date 21.12.2016
+            .newslist__description
+              h3.newslist__title Новость 1
+              p.newslist__text Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития.
+            a(href="#").newslist__link
+        // end newslist
+
+        include ../elements/pagination
+
+  //end   content
+
+  include ../sections/footer

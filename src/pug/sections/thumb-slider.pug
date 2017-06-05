@@ -1,0 +1,20 @@
+//begin thumb-slider
+header.section-header.thumb-slider-header
+  h2.section-header__title Выполненные проекты
+
+section.thumb-slider-section
+  ul.thumb-tabs__list
+    li.thumb-tabs__item.active(data-slider=".thumb-slider-01") Все проекты
+    li.thumb-tabs__item(data-slider=".thumb-slider-02") Остекление балконов и лоджий
+    li.thumb-tabs__item(data-slider=".thumb-slider-03") Оконные системы
+    li.thumb-tabs__item(data-slider=".thumb-slider-04") Ремонт под ключ
+
+  include ../elements/thumb-slider-01
+  include ../elements/thumb-slider-02
+  include ../elements/thumb-slider-03
+  include ../elements/thumb-slider-04
+
+footer.thumb-slider__footer
+  a(href="#").thumb-slider__all-link Все новости
+
+//end   thumb-slider

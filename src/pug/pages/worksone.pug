@@ -1,0 +1,86 @@
+extends ../_template
+
+block variables
+  - var title = 'Worksone'
+  - var pageHeaderTitle = 'Супер работа'
+
+block content
+  include ../sections/header
+
+  //begin content
+  section.main
+    aside.aside
+      .aside-open
+
+      .aside__inn
+        include ../elements/aside-logo
+
+        h3.aside__title Виды работ
+
+        nav.aside-menu
+          ul.aside-menu__list
+            li.aside-menu__item
+              a(href="#").aside-menu__link Все работы
+            li.aside-menu__item.active
+              a(href="#").aside-menu__link Ремонт под ключ
+            li.aside-menu__item
+              a(href="#").aside-menu__link Остекление балконов
+            li.aside-menu__item
+              a(href="#").aside-menu__link Отделка балконов
+
+
+    .container-right
+      .container-right__inn
+        include ../elements/breadcrumbs
+
+        h1.page-header-title #{pageHeaderTitle}
+
+        // begin worksone
+        .worksone
+          // begin worksone-slider
+          section.worksone-slider
+            ul.worksone-slider__list
+              li.worksone-slider__item
+                img.worksone-slider__pic(src='assets/img/worksone-slider/worksone-01.jpg', alt="worksone-slider")
+              li.worksone-slider__item
+                img.worksone-slider__pic(src='assets/img/worksone-slider/worksone-02.jpg', alt="worksone-slider")
+              li.worksone-slider__item
+                img.worksone-slider__pic(src='assets/img/worksone-slider/worksone-03.jpg', alt="worksone-slider")
+          // end worksone-slider
+
+          // begin worksone-info
+          .worksone-info
+            .worksone-info__description
+              h3.worksone-info__title
+                |Замена
+                br
+                | стеклопакетов
+              h4.worksone-info__adress пр. Луначарского, д.96
+            .worksone-info__icon-list
+              .icon__item
+                svg
+                  use(xlink:href="assets/img/sprite.svg#temp-01")
+                h4.icon__title Наши преимущества
+                a(href="#").icon__link
+              .icon__item
+                svg
+                  use(xlink:href="assets/img/sprite.svg#temp-02")
+                h4.icon__title Выполненные проекты
+                a(href="#").icon__link
+              .icon__item
+                svg
+                  use(xlink:href="assets/img/sprite.svg#temp-03")
+                h4.icon__title Стоимость работ
+                a(href="#").icon__link
+          // end worksone-info
+
+          .worksone-text
+            p Значимость этих проблем настолько очевидна, что новая модель организационной деятельности требуют определения и уточнения направлений прогрессивного развития. С другой стороны укрепление и развитие структуры представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт сложившаяся структура организации требуют определения и уточнения новых предложений. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+            p С другой стороны начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки соответствующий условий активизации. С другой стороны реализация намеченных плановых заданий позволяет оценить значение соответствующий условий активизации. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения дальнейших направлений развития.
+
+          .worksone-controls
+            include ../elements/large-controls
+        // end worksone
+  //end   content
+
+  include ../sections/footer

@@ -1,0 +1,141 @@
+.contacts {
+  display: flex;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding: 15px 20px 15px 20px;
+
+  @include m1000() {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  @include m768() {
+    padding: 10px 20px;
+  }
+  @include m700() {
+    padding: 20px 20px 10px 20px;
+  }
+  @include m425() {
+    padding: 20px 10px 10px 10px;
+  }
+}
+.contacts__item {
+  padding-right: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #804a74;
+
+  @include m1100() {
+    padding-right: 15px;
+  }
+  @include m1000() {
+    border-bottom: none;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
+.contacts__title {
+  position: relative;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+
+  @include font-size(18);
+  &::after {
+    display: inline-block;
+    width: 100px;
+    height: 11px;
+    margin-left: 10px;
+    content: '';
+    background-image: url('../img/actions-decor.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+}
+.contacts__link-list {
+  padding: 0 20px;
+}
+.contacts__link {
+  text-decoration: none;
+  color: #403549;
+
+  @include font-size(14);
+  @include line-height(18);
+}
+
+.contacts-map {
+  iframe {
+    display: block;
+    width: 100%;
+    height: 340px;
+  }
+}
+
+.callback {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px;
+  background-color: #3f354e;
+
+  @include m700() {
+    width: 100%;
+  }
+  @include m425() {
+    padding: 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 420px;
+
+    @include m700() {
+      margin: 0 auto;
+    }
+  }
+  label {
+    font-family: $font-semibold;
+    color: #fff;
+
+    @include font-size(16);
+  }
+  input {
+    font-size: 16px;
+    width: 100%;
+    margin: 7px 0 20px 0;
+    padding: 5px 10px;
+    outline: none;
+  }
+}
+.callback__title {
+  font-family: $font-bold;
+  width: 100%;
+  max-width: 420px;
+  text-transform: uppercase;
+  color: #fff;
+
+  @include font-size(22);
+  @include line-height(26);
+  @include m700() {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.callback-form__send {
+  input {
+    font-family: $font-bold;
+    padding: 10px;
+    transition: .5s;
+    text-transform: uppercase;
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: transparent;
+
+    @include font-size(20);
+    &:hover {
+      color: #c5b1e4;
+      border: 3px solid #c5b1e4;
+    }
+  }
+}

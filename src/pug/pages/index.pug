@@ -1,0 +1,30 @@
+extends ../_template
+
+block variables
+  - var title = 'Genesis'
+
+block content
+  include ../sections/header
+
+  //begin content
+  section.main.main-index
+    include ../sections/top-slider
+
+    section.btn-section
+      .container
+        h4.btn-section__title Начните ремонт своей мечты прямо сейчас!
+        a(href="#").btn-section__button Смотреть работы
+        a(href="#").btn-section__button Оставить заявку
+
+    include ../sections/we-know
+
+    include ../sections/thumb-slider
+
+    include ../sections/news-sec
+
+    include ../sections/partners
+
+    include ../sections/callback
+  //end   content
+
+  include ../sections/footer

@@ -1,0 +1,63 @@
+extends ../_template
+
+block variables
+  - var title = 'Actions'
+  - var pageHeaderTitle = 'Акции'
+
+block content
+  include ../sections/header
+
+  //begin content
+  section.main
+    aside.aside
+      .aside-open
+
+      .aside__inn
+        include ../elements/aside-logo
+
+        h3.aside__title О компании
+
+        nav.aside-menu
+          ul.aside-menu__list
+            li.aside-menu__item
+              a(href="#").aside-menu__link Лицензии и сертификаты
+            li.aside-menu__item.active
+              a(href="#").aside-menu__link История
+            li.aside-menu__item
+              a(href="#").aside-menu__link Партнерам
+            li.aside-menu__item
+              a(href="#").aside-menu__link Типовые документы
+            li.aside-menu__item
+              a(href="#").aside-menu__link Любой другой раздел
+
+
+    .container-right
+      .container-right__inn
+        include ../elements/breadcrumbs
+
+        h1.page-header-title #{pageHeaderTitle}
+
+        // begin actions
+        .actions
+          .actions-item
+            .actions-item__description
+              h3.actions-item__title 30% скидка
+              h4.actions-item__subtitle на ремонт квартиры "под ключ"
+              p.actions-item__text Только в этом году мы предлагаем скидки на ремонт квартир "под ключ"!
+              a(href="#").actions-item__link Подробнее
+            .actions-item__pic
+              img(src='assets/img/actions.jpg', alt="actions picture")
+
+          .actions-item
+            .actions-item__description
+              h3.actions-item__title 30% скидка
+              h4.actions-item__subtitle на ремонт квартиры "под ключ"
+              p.actions-item__text Только в этом году мы предлагаем скидки на ремонт квартир "под ключ"!
+              a(href="#").actions-item__link Подробнее
+            .actions-item__pic
+              img(src='assets/img/actions.jpg', alt="actions picture")
+
+        // end actions
+  //end   content
+
+  include ../sections/footer

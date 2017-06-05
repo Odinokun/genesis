@@ -1,0 +1,42 @@
+// begin header
+header.header.header__stick
+  .aside
+    .aside__inn
+      a(href="#").top-logo__link
+
+  .container-right
+    .container-right__inn
+      include ../elements/burger
+
+      // begin top menu
+      nav.top-menu
+        ul.top-menu__list
+          li.top-menu__item
+            a(href="#").top-menu__link.top-menu__link--home
+              svg
+                use(xlink:href="assets/img/sprite.svg#home")
+          li.top-menu__item
+            a(href="#").top-menu__link.top-menu__link--sale Акции
+          li.top-menu__item
+            a(href="#").top-menu__link О компании
+          li.top-menu__item
+            a(href="#").top-menu__link Услуги и цены
+          li.top-menu__item
+            a(href="#").top-menu__link Наши работы
+          li.top-menu__item
+            a(href="#").top-menu__link Партнерам
+          li.top-menu__item
+            a(href="#").top-menu__link Контакты
+      // end   top menu
+
+      // begin top-phones
+      .top-phones
+        .top-phones__bg
+          svg
+            use(xlink:href="assets/img/sprite.svg#call")
+        a(href="tel://+7 812 600 94 38").top-phones__link +7 (812) 600-94-38
+        a(href="tel://+7 812 600 94 38").top-phones__link +7 (812) 600-94-38
+        a(href="tel://+7 812 600 94 38").top-phones__link +7 (812) 600-94-38
+      // end   top-phones
+
+// end   header

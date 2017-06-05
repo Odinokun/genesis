@@ -1,0 +1,100 @@
+.header {
+  z-index: 10000 !important;
+  display: flex;
+  &.sticking {
+    right: 0;
+    left: 0;
+  }
+}
+.top-logo__link {
+  display: block;
+  width: 180px;
+  height: 45px;
+  background-image: url('../img/logo-large.png');
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: contain;
+}
+.header {
+  .aside {
+    background: #3f354e;
+
+    @include m1190() {
+      display: none;
+    }
+  }
+  .container-right {
+    display: flex;
+    background-image: $gradient;
+
+    align-items: center;
+    @include m1190() {
+      width: 100%;
+    }
+  }
+  .container-right__inn {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    justify-content: space-between;
+    align-items: center;
+    @include m1190() {
+      flex-direction: column-reverse;
+      max-width: 100%;
+
+      align-items: flex-start;
+    }
+    @include m768() {
+      padding-left: 0;
+    }
+  }
+}
+
+.top-phones {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding-left: 40px;
+
+  @include m1190() {
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 25px;
+  }
+  @include m768() {
+    display: none;
+  }
+}
+.top-phones__bg {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  bottom: 0;
+  left: 10px;
+  pointer-events: none;
+  svg {
+    width: 100px;
+    height: 100px;
+
+    fill: rgba(255, 255, 255, .1);
+    @include m1190() {
+      display: none;
+    }
+  }
+}
+.top-phones__link {
+  font-family: $font-bold;
+  text-decoration: none;
+  color: #fff;
+
+  @include font-size(16);
+  @include line-height(20);
+  @include m1190() {
+    margin-right: 30px;
+  }
+}

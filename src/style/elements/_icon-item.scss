@@ -1,0 +1,49 @@
+.icon__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  padding: 10px;
+  text-align: center;
+
+  align-items: center;
+  @include m320() {
+    width: 100px;
+  }
+  &:hover {
+    svg {
+      fill: #cfbaef;
+    }
+    .icon__title {
+      color: #cfbaef;
+    }
+  }
+  svg {
+    width: 50px;
+    height: 40px;
+    margin-bottom: 5px;
+    transition: fill .5s;
+
+    fill: #fff;
+  }
+}
+.icon__title {
+  font-family: $font-light;
+  margin: 0;
+  transition: color .5s;
+  letter-spacing: .7px;
+  color: #fff;
+
+  @include font-size(14);
+  @include line-height(18);
+  @include m320() {
+    @include font-size(12);
+  }
+}
+.icon__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

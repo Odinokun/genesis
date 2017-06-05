@@ -1,0 +1,127 @@
+extends ../_template
+
+block variables
+  - var title = 'Servise'
+  - var pageHeaderTitle = 'Услуги'
+
+block content
+  include ../sections/header
+
+  //begin content
+  section.main
+    aside.aside
+      .aside-open
+
+      .aside__inn
+        include ../elements/aside-logo
+
+        h3.aside__title О компании
+
+        nav.aside-menu
+          ul.aside-menu__list
+            li.aside-menu__item
+              a(href="#").aside-menu__link Лицензии и сертификаты
+            li.aside-menu__item.active
+              a(href="#").aside-menu__link История
+            li.aside-menu__item
+              a(href="#").aside-menu__link Партнерам
+            li.aside-menu__item
+              a(href="#").aside-menu__link Типовые документы
+            li.aside-menu__item
+              a(href="#").aside-menu__link Любой другой раздел
+
+
+    .container-right
+      .container-right__inn
+        include ../elements/breadcrumbs
+
+        h1.page-header-title #{pageHeaderTitle}
+
+        // begin works
+        .service
+          section.service-header
+            p.service-header__text Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям.
+
+          section.works-list
+            // begin servise-item 01
+            .service-item
+              .service-item__descripton
+                h3.service-item__title
+                  a(href="#") Отделка и остекление балконов
+                p.service-item__text Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям.
+                .service-item__icon-list
+                  .icon__item
+                    svg
+                      use(xlink:href="assets/img/sprite.svg#temp-01")
+                    h4.icon__title Наши преимущества
+                    a(href="#").icon__link
+                  .icon__item
+                    svg
+                      use(xlink:href="assets/img/sprite.svg#temp-02")
+                    h4.icon__title Выполненные проекты
+                    a(href="#").icon__link
+                  .icon__item
+                    svg
+                      use(xlink:href="assets/img/sprite.svg#temp-03")
+                    h4.icon__title Стоимость работ
+                    a(href="#").icon__link
+              .service-item__pic
+                img(src='assets/img/service.jpg', alt="service picture")
+            // end servise-item 01
+
+            // begin servise-item 02
+            .service-item
+              .service-item__descripton
+                h3.service-item__title
+                  a(href="#") Оконные системы
+                p.service-item__text Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям.
+                .service-item__icon-list
+                  .icon__item
+                    svg
+                      use(xlink:href="assets/img/sprite.svg#temp-01")
+                    h4.icon__title Наши преимущества
+                    a(href="#").icon__link
+                  .icon__item
+                    svg
+                      use(xlink:href="assets/img/sprite.svg#temp-02")
+                    h4.icon__title Выполненные проекты
+                    a(href="#").icon__link
+                  .icon__item
+                    svg
+                      use(xlink:href="assets/img/sprite.svg#temp-03")
+                    h4.icon__title Стоимость работ
+                    a(href="#").icon__link
+              .service-item__pic
+                img(src='assets/img/service.jpg', alt="service picture")
+            // end servise-item 02
+
+            // begin servise-item 03
+            .service-item
+              .service-item__descripton
+                h3.service-item__title
+                  a(href="#") Ремонт и отделка
+                p.service-item__text Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям.
+                .service-item__icon-list
+                  .icon__item
+                    svg
+                      use(xlink:href="assets/img/sprite.svg#temp-01")
+                    h4.icon__title Наши преимущества
+                    a(href="#").icon__link
+                  .icon__item
+                    svg
+                      use(xlink:href="assets/img/sprite.svg#temp-02")
+                    h4.icon__title Выполненные проекты
+                    a(href="#").icon__link
+                  .icon__item
+                    svg
+                      use(xlink:href="assets/img/sprite.svg#temp-03")
+                    h4.icon__title Стоимость работ
+                    a(href="#").icon__link
+              .service-item__pic
+                img(src='assets/img/service.jpg', alt="service picture")
+            // end servise-item 03
+
+        // end newslist
+  //end   content
+
+  include ../sections/footer

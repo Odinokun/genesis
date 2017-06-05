@@ -1,0 +1,38 @@
+// core
+@import 'core/fonts';
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/base';
+
+//elements
+@import 'elements/breadcrumbs';
+@import 'elements/burger';
+@import 'elements/top-menu';
+@import 'elements/icon-item';
+@import 'elements/pagination';
+@import 'elements/large-controls';
+@import 'elements/success';
+
+//section
+@import 'sections/footer';
+@import 'sections/header';
+@import 'sections/aside';
+  //index-section
+  @import 'sections/top-slider';
+  @import 'sections/btn-section';
+  @import 'sections/we-know';
+  @import 'sections/thumb-slider';
+  @import 'sections/news-sec';
+  @import 'sections/partners';
+  @import 'sections/callback';
+
+//pages
+@import 'pages/index';
+@import 'pages/inner';
+@import 'pages/newslist';
+@import 'pages/newsone';
+@import 'pages/service';
+@import 'pages/works';
+@import 'pages/worksone';
+@import 'pages/actions';
+@import 'pages/contacts';
