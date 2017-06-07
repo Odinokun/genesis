@@ -1,0 +1,83 @@
+extends ../_template
+
+block variables
+  - var title = 'Подтверждение заказа'
+  - var pageHeaderTitle = 'Подтверждение заказа'
+
+block content
+  include ../sections/header
+
+  //begin content
+  section.main
+    aside.aside
+      .aside-open
+
+      .aside__inn
+        include ../elements/aside-logo
+
+        h3.aside__title Архив статей
+
+        nav.aside-menu
+          ul.aside-menu__list
+            li.aside-menu__item
+              a(href="#").aside-menu__link Все статьи
+            li.aside-menu__item.active
+              a(href="#").aside-menu__link Январь 2017
+            li.aside-menu__item
+              a(href="#").aside-menu__link Февраль 2017
+            li.aside-menu__item
+              a(href="#").aside-menu__link Март 2017
+
+
+    .container-right
+      .container-right__inn
+        include ../elements/breadcrumbs
+
+        h1.page-header-title #{pageHeaderTitle}
+
+        // begin buy
+        .buy
+          .buy__item
+            h2.buy__title Балконный блок (504 серия)
+            .buy__item-inn
+              .buy-col.buy__pic
+                img(src="assets/img/productlist__item-01.svg", alt="picture")
+
+              .buy-col.buy__table
+                .buy__row
+                  .buy__cell.buy__cell--left Профиль:
+                  .buy__cell.buy__cell--right.buy__cell--brand 
+                    span Rehau
+                .buy__row
+                  .buy__cell.buy__cell--left Фурнитура:
+                  .buy__cell.buy__cell--right.buy__cell--furnitura 
+                    span Roto NT
+                .buy__row
+                  .buy__cell.buy__cell--left Стеклопакет:
+                  .buy__cell.buy__cell--right.buy__cell--glass 
+                    span 4-16Ar-4i-ст  (504 серия)
+                    a(href="#") Подробнее о данной серии
+                .buy__row
+                  .buy__cell.buy__cell--left Цена:
+                  .buy__cell.buy__cell--right.buy__cell--price 
+                    span 19500р.
+                .buy__row
+                  .buy__cell.buy__cell--left Исполнение:
+                  .buy__cell.buy__cell--right.buy__cell--type 
+                    span Стандарт
+                    p Профиль 60мм и другое описание стандартного профиля
+
+            form.buy-item__form
+              input(type="text" placeholder="Ваше имя" required)
+              input(type="phone" placeholder="Телефон" required)
+              input(type="submit" value="Заказать")
+
+            .buy-item__footer
+              h3.buy-item__footer-title Особенности:
+              p.buy-item__footer-text Повседневная практика показывает, что реализация намеченных плановых заданий требуют от нас анализа систем массового участия. Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации существенных финансовых и административных условий. Товарищи! сложившаяся структура организации представляет собой интересный эксперимент проверки дальнейших направлений развития. 
+
+        // end buy
+
+  //end   content
+
+  include ../sections/footer

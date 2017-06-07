@@ -11,7 +11,8 @@ $(document).ready(function ($) {
     'service',
     'actions',
     'contacts',
-    'productlist'
+    'productlist',
+    'buy'
     ]);
 });
 
