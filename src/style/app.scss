@@ -17,14 +17,15 @@
 @import 'sections/footer';
 @import 'sections/header';
 @import 'sections/aside';
-  //index-section
-  @import 'sections/top-slider';
-  @import 'sections/btn-section';
-  @import 'sections/we-know';
-  @import 'sections/thumb-slider';
-  @import 'sections/news-sec';
-  @import 'sections/partners';
-  @import 'sections/callback';
+
+//index-section
+@import 'sections/top-slider';
+@import 'sections/btn-section';
+@import 'sections/we-know';
+@import 'sections/thumb-slider';
+@import 'sections/news-sec';
+@import 'sections/partners';
+@import 'sections/callback';
 
 //pages
 @import 'pages/index';
@@ -36,3 +37,4 @@
 @import 'pages/worksone';
 @import 'pages/actions';
 @import 'pages/contacts';
+@import 'pages/productlist';

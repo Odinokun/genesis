@@ -1,0 +1,170 @@
+extends ../_template
+
+block variables
+  - var title = 'Панельные дома 507 серии'
+  - var pageHeaderTitle = 'Панельные дома 507 серии'
+
+block content
+  include ../sections/header
+
+  //begin content
+  section.main
+    aside.aside
+      .aside-open
+
+      .aside__inn
+        include ../elements/aside-logo
+
+        h3.aside__title Архив статей
+
+        nav.aside-menu
+          ul.aside-menu__list
+            li.aside-menu__item
+              a(href="#").aside-menu__link Все статьи
+            li.aside-menu__item.active
+              a(href="#").aside-menu__link Январь 2017
+            li.aside-menu__item
+              a(href="#").aside-menu__link Февраль 2017
+            li.aside-menu__item
+              a(href="#").aside-menu__link Март 2017
+
+
+    .container-right
+      .container-right__inn
+        include ../elements/breadcrumbs
+
+        h1.page-header-title #{pageHeaderTitle}
+
+        // begin productlist
+        .productlist
+          header.productlist__header
+            img.productlist__header-pic(src="assets/img/productlist-header.jpg", alt="img")
+            .productlist__header-text Повседневная практика показывает, что реализация намеченных плановых заданий требуют от нас анализа систем массового участия. Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации существенных финансовых и административных условий. Товарищи! сложившаяся структура организации представляет собой интересный эксперимент проверки дальнейших направлений развития. 
+          
+          //- BEGIN productlist__item 
+          .productlist__item
+            h2.productlist__title Балконный блок
+            .productlist__item-inn
+
+              .productlist-col.productlist__pic
+                img(src="assets/img/productlist__item-01.svg", alt="picture")
+
+              .productlist-col.productlist__standart
+                h3.productlist-col__title Стандарт
+                p.productlist-col__text Профиль 60мм и другое описание стандартного профиля
+                form.productlist-form
+                  label.productlist-form__lable
+                    .productlist-form__checkbox  
+                      input(type="checkbox")
+                    span.productlist-form__brand Rehau
+                    span.productlist-form__oldprice 13500р.
+                    span.productlist-form__price 19500р.
+                  label.productlist-form__lable
+                    .productlist-form__checkbox  
+                      input(type="checkbox")
+                    span.productlist-form__brand Ivaper
+                    span.productlist-form__oldprice 17500р.
+                    span.productlist-form__price 19500р.
+                  label.productlist-form__lable
+                    .productlist-form__checkbox  
+                      input(type="checkbox")
+                    span.productlist-form__brand Crunder
+                    span.productlist-form__oldprice 15500р.
+                    span.productlist-form__price 20500р.
+
+                  input(type="submit" value="Заказать")
+
+              .productlist-col.productlist__comfort
+                h3.productlist-col__title Комфорт
+                p.productlist-col__text Профиль 60мм и другое описание стандартного профиля
+                form.productlist-form
+                  label.productlist-form__lable
+                    .productlist-form__checkbox  
+                      input(type="checkbox")
+                    span.productlist-form__brand Rehau
+                    span.productlist-form__price 19500р.
+                  label.productlist-form__lable
+                    .productlist-form__checkbox  
+                      input(type="checkbox")
+                    span.productlist-form__brand Ivaper
+                    span.productlist-form__price 19500р.
+                  label.productlist-form__lable
+                    .productlist-form__checkbox  
+                      input(type="checkbox")
+                    span.productlist-form__brand Crunder
+                    span.productlist-form__price 20500р.
+
+                  input(type="submit" value="Заказать")
+            
+            .productlist-item__footer
+              h3.productlist-item__footer-title Особенности:
+              p.productlist-item__footer-text Повседневная практика показывает, что реализация намеченных плановых заданий требуют от нас анализа систем массового участия. Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации существенных финансовых и административных условий. Товарищи! сложившаяся структура организации представляет собой интересный эксперимент проверки дальнейших направлений развития. 
+          //- END productlist__item 
+
+
+          //- BEGIN productlist__item 
+          .productlist__item
+            h2.productlist__title Оконный блок
+            .productlist__item-inn
+
+              .productlist-col.productlist__pic
+                img(src="assets/img/productlist__item-02.svg", alt="picture")
+
+              .productlist-col.productlist__standart
+                h3.productlist-col__title Стандарт
+                p.productlist-col__text Профиль 60мм и другое описание стандартного профиля
+                form.productlist-form
+                  label.productlist-form__lable
+                    .productlist-form__checkbox  
+                      input(type="checkbox")
+                    span.productlist-form__brand Rehau
+                    span.productlist-form__oldprice 13500р.
+                    span.productlist-form__price 19500р.
+                  label.productlist-form__lable
+                    .productlist-form__checkbox  
+                      input(type="checkbox")
+                    span.productlist-form__brand Ivaper
+                    span.productlist-form__oldprice 17500р.
+                    span.productlist-form__price 19500р.
+                  label.productlist-form__lable
+                    .productlist-form__checkbox  
+                      input(type="checkbox")
+                    span.productlist-form__brand Crunder
+                    span.productlist-form__oldprice 15500р.
+                    span.productlist-form__price 20500р.
+
+                  input(type="submit" value="Заказать")
+
+              .productlist-col.productlist__comfort
+                h3.productlist-col__title Комфорт
+                p.productlist-col__text Профиль 60мм и другое описание стандартного профиля
+                form.productlist-form
+                  label.productlist-form__lable
+                    .productlist-form__checkbox  
+                      input(type="checkbox")
+                    span.productlist-form__brand Rehau
+                    span.productlist-form__price 19500р.
+                  label.productlist-form__lable
+                    .productlist-form__checkbox  
+                      input(type="checkbox")
+                    span.productlist-form__brand Ivaper
+                    span.productlist-form__price 19500р.
+                  label.productlist-form__lable
+                    .productlist-form__checkbox  
+                      input(type="checkbox")
+                    span.productlist-form__brand Crunder
+                    span.productlist-form__price 20500р.
+
+                  input(type="submit" value="Заказать")
+            
+            .productlist-item__footer
+              h3.productlist-item__footer-title Особенности:
+              p.productlist-item__footer-text Повседневная практика показывает, что реализация намеченных плановых заданий требуют от нас анализа систем массового участия. Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации существенных финансовых и административных условий. Товарищи! сложившаяся структура организации представляет собой интересный эксперимент проверки дальнейших направлений развития. 
+          //- END productlist__item 
+
+
+        // end productlist
+
+  //end   content
+
+  include ../sections/footer

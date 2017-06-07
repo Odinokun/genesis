@@ -10,7 +10,8 @@ $(document).ready(function ($) {
     'worksone',
     'service',
     'actions',
-    'contacts'
+    'contacts',
+    'productlist'
     ]);
 });
 
