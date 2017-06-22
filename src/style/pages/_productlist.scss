@@ -2,6 +2,7 @@
 .productlist__header {
   margin-bottom: 30px;
 
+  @include clearfix;
   @include m700() {
     display: block;
   }
