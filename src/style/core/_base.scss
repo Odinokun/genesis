@@ -174,7 +174,7 @@ ul {
 .page-header-title {
   font-family: $font-light;
   margin: 0 0 15px -3px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   color: #403549;
 
   @include font-size(34);
