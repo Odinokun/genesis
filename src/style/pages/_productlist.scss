@@ -67,6 +67,9 @@
   @include m1100() {
     width: 100%;
   }
+  a:focus {
+    outline: none;
+  }
   img {
     display: block;
     width: 100%;

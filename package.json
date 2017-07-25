@@ -4,6 +4,7 @@
   "description": "odinokun start template",
   "main": "gulpfile.js",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.1.20",
     "browser-sync": "2.11.2",
     "browserify": "^13.1.1",
     "bxslider": "^4.2.6",

@@ -12,6 +12,7 @@ $(document).ready(function ($) {
     'actions',
     'contacts',
     'productlist',
+    'productlist-2',
     'buy'
     ]);
 });

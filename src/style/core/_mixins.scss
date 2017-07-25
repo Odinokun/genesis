@@ -76,6 +76,11 @@
     @content;
   }
 }
+@mixin m760 {
+  @media screen and (max-width: 760px) {
+    @content;
+  }
+}
 @mixin m700 {
   @media screen and (max-width: 700px) {
     @content;
@@ -83,6 +88,16 @@
 }
 @mixin m600 {
   @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+@mixin m500 {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin m450 {
+  @media screen and (max-width: 450px) {
     @content;
   }
 }

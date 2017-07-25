@@ -32,4 +32,8 @@ $(function() {
   require('./modules/thumb-tabs')();
   // end   thumb-tabs
 
+  // begin productlist-carousel
+  require('./modules/productlist-carousel')();
+  // end   productlist-carousel
+
 });

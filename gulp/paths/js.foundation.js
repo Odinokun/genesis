@@ -5,5 +5,7 @@ module.exports = [
   './node_modules/svg4everybody/dist/svg4everybody.min.js',
   './node_modules/bxslider/dist/jquery.bxslider.min.js',
   './src/vendors/smothScroll/smoothScroll.min.js',
-  './src/vendors/ThumbnailScroller/jquery.mThumbnailScroller.js'
+  './src/vendors/ThumbnailScroller/jquery.mThumbnailScroller.js',
+    // include fancybox3
+  './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
 ];
